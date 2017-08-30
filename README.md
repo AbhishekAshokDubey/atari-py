@@ -26,4 +26,4 @@ Similar to what rybskej built here for an older version of atari: https://github
 env = gym.make('Pong-v0')
 env.reset()
 env.render()
-env.close()```
+env.close()
