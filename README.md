@@ -2,9 +2,10 @@
 
 [![Build Status](https://travis-ci.org/openai/atari-py.svg?branch=master)](https://travis-ci.org/openai/atari-py)
 
-A packaged and slightly-modified version of [https://github.com/bbitmaster/ale_python_interface](https://github.com/bbitmaster/ale_python_interface).
+A patched version of [atari_py](https://github.com/openai/atari-py) for windows.
+<br/>Tested on windows 7.
 
-#### Avoid if you know what is this for
+#### Jump directly to the next section, if you know what is this for
 May be you can fix build issues and install missing libraries as and when you find erros, but I would still prefer to have extra build tools already installed to avoid runing into issues later.
   - Download Community Visual Studio from https://www.visualstudio.com/downloads/
   - While installation make sure to check/ download "Desktop development for C++". This will install required libraries like Visual C++ tool for cmake.
