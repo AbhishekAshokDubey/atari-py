@@ -15,7 +15,7 @@ A patched version of [atari_py](https://github.com/openai/atari-py) for windows.
 Similar to what rybskej built here for an older version of atari: https://github.com/rybskej/atari-py
   - Install MSYS2 and follow post-install instructions: https://msys2.github.io/
   - Install MSYS2 packages (via MSYS terminal): <br/>```pacman -S base-devel mingw-w64-x86_64-gcc mingw-w64-x86_64-cmake```<br/>Make sure it is accesible by appending it to the ```path``` user/ environment variable <br>i.e Append ";C:\msys64\mingw64\bin;C:\msys64\usr\bin" to the ```path``` variable<br/> 
-  - Install Xming: [https://sourceforge.net/projects/xming/])(https://sourceforge.net/projects/xming/)
+  - Install Xming: https://sourceforge.net/projects/xming/
   - Then add a new windows environment/ user variable: Name=DISPLAY, Value=:0
   - Install atari-py and OpenAI Gym:<br/> ```git clone https://github.com/AbhishekAshokDubey/atari-py.git```<br/> ```cd atari-py && make && python setup.py install && pip install "gym[atari]"```
   - If you get some issues while pip installing ```gym[atari]```, dun panic, as long as the make command worked for you, just append the path of the main 'atri-py' folder on your system to the ```PYTHONPATH``` variable in the environment variables.
