@@ -2,10 +2,19 @@
 
 [![Build Status](https://travis-ci.org/openai/atari-py.svg?branch=master)](https://travis-ci.org/openai/atari-py)
 
+
+This was some old work, but now there are aleady windows binaries around: https://github.com/Kojoley/atari-py/releases
+Even a simple
+```
+pip install gym
+pip install git+https://github.com/Kojoley/atari-py.git
+```
+should also work, just make sure you have Microsoft Visual C++ Build Tools, if not just check the section below
+
 A patched version of [atari_py](https://github.com/openai/atari-py) for windows.
 <br/>Tested on windows 7.
 
-#### Jump directly to the next section, if you know what is this for
+#### For Microsoft Visual C++ Build Tools, skip you know what is this for
   - Download Community Visual Studio from https://www.visualstudio.com/downloads/
   - While installation make sure to check/ download "Desktop development for C++". This will install required libraries like Visual C++ tool for cmake.
   - You might get some Win10SDK installation error, in case you do, first install the SDK from here https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk and then re-try installating "Desktop development for C++"
@@ -22,8 +31,10 @@ Similar to what rybskej built here for an older version of atari: https://github
 
 
 ### Next
-```import gym
+```
+import gym
 env = gym.make('Pong-v0')
 env.reset()
 env.render()
 env.close()
+```
